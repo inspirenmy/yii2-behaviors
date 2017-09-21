@@ -1,12 +1,12 @@
 {
-    "name": "demmonico/yii2-behaviors",
+    "name": "inspirenmy/yii2-behaviors",
     "type": "yii2-extension",
     "description": "Yii2 behaviors library",
     "keywords": ["yii", "yii2", "behavior", "extension", "component"],
-    "homepage": "https://github.com/demmonico/yii2-behaviors",
+    "homepage": "https://github.com/inspirenmy/yii2-behaviors",
     "license": "MIT",
     "authors": [
-        {"name": "Dmitry demmonico", "email": "demmonico@gmail.com"}
+        {"name": "Dmitry inspirenmy", "email": "inspirenmy@gmail.com"}
     ],
     "require": {
         "php": ">5.5.0",
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "demmonico\\behaviors\\": "src"
+            "inspirenmy\\behaviors\\": "src"
         }
     }
 }
