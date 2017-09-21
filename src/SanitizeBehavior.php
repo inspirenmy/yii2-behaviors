@@ -4,7 +4,7 @@
  * Date: 12.07.16
  */
 
-namespace demmonico\behaviors;
+namespace inspirenmy\behaviors;
 use yii\base\Behavior;
 use yii\base\Model;
 use yii\helpers\Html;

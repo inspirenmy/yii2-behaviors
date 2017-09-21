@@ -4,7 +4,7 @@
  * Date: 11.07.16
  */
 
-namespace demmonico\behaviors;
+namespace inspirenmy\behaviors;
 use yii\db\ActiveRecord;
 use yii\db\Expression;
 
