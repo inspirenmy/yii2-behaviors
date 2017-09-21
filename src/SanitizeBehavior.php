@@ -90,9 +90,17 @@ class SanitizeBehavior extends Behavior
     protected function getStringAttributes($onlyHtmlUnsafeAttributes=true)
     {
         $r = [];
-        foreach($this->owner->attributes as $k=>$v){
-            if (!$onlyHtmlUnsafeAttributes || !in_array($k, $this->htmlSafeAttributes)
-                AND !empty($v) AND is_string($v) AND !ctype_digit($v)
+        foreach($this->owner->attributes as $k=>$v)
+        {
+            if (
+                    !$onlyHtmlUnsafeAttributes 
+                ||  (
+                        !in_array($k, $this->htmlSafeAttributes)
+                    //  empty value are included
+                    //  AND !empty($v) 
+                    AND is_string($v) 
+                    AND !ctype_digit($v)
+                )
             ) {
                 $r[] = $k;
             }
